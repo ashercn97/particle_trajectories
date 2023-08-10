@@ -23,9 +23,9 @@ class Particles(object):
         self.m = m
         
     def findDistance(self, particle2):
-        deltaX = self.posx - particle2.posx
-        deltaY = self.posy - particle2.posy
-        deltaZ = self.posz - particle2.posz
+        deltaX = self.x - particle2.x
+        deltaY = self.y - particle2.y
+        deltaZ = self.z - particle2.z
         
         return np.sqrt(np.power(deltaX, 2) + np.power(deltaY, 2) + np.power(deltaZ, 2)), np.array([deltaX, deltaY, deltaZ])
     
